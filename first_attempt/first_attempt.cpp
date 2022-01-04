@@ -12,27 +12,41 @@ private:
 
 
 public:
+
+  void Setx (int valueX)
+  {
+    x = valueX;
+  }
+  
+  void Sety (int valueY)
+  {
+    y = valueY * 2;
+  }
+  
   int Getx ()
   {
     return x;
   }
-
-  void Setx (int x)
+  
+  int Gety ()
   {
-    x = x;
+    return x;
   }
 
   void Print ()
   {
-    cout << "x = " << x << "t/ y = " << y << endl << endl;
+    cout << "x = " << x << " y = " << y << endl << endl;
   }
+};
 
+  int main ()
+  {
+    Point a;
+    a.Setx(11);
+    a.Sety(5);
+    a.Print();
+    //int result = a.Getx();
+    //cout << result << endl;
 
-
-int main()
-{
-  Point a;
-  a.Print();
-
-  return 0;
-}
+    return 0;
+  }
